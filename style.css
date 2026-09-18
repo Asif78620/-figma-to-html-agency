@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f8f9ff;
+    color:#111;
+    line-height:1.6;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 2px 15px rgba(0,0,0,0.05);
+}
+.logo{
+    font-weight:700;
+    font-size:22px;
+}
+.btn-nav{
+    background:#111;
+    color:white;
+    padding:9px 18px;
+    border-radius:25px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+/* HERO */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:70px 8%;
+    gap:50px;
+    min-height:85vh;
+}
+.badge{
+    background:#eef2ff;
+    color:#4f46e5;
+    padding:7px 14px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+}
+.hero-text h1{
+    font-size:42px;
+    line-height:1.2;
+    margin:18px 0;
+}
+.highlight{
+    color:#4f46e5;
+}
+.hero-text p{
+    color:#555;
+    max-width:500px;
+    margin-bottom:28px;
+    font-size:16px;
+}
+.btns{
+    display:flex;
+    gap:15px;
+}
+.btn-main{
+    background:#4f46e5;
+    color:white;
+    padding:12px 26px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+}
+.btn-sec{
+    border:1px solid #ddd;
+    padding:12px 26px;
+    border-radius:8px;
+    text-decoration:none;
+    color:#111;
+    background:white;
+}
+
+/* IMAGE */
+.hero-img .img-card{
+    width:380px;
+    height:380px;
+    background:#e5e7eb;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 25px 50px rgba(79,70,229,0.18);
+}
+.hero-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* SKILLS */
+.skills-sec{
+    padding:70px 8%;
+    text-align:center;
+    background:white;
+}
+.skills-sec h2{
+    font-size:28px;
+    margin-bottom:10px;
+}
+.skills-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    justify-content:center;
+    margin-top:30px;
+}
+.skill{
+    background:#f8f9ff;
+    border:1px solid #eee;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:500;
+    box-shadow:0 2px 8px rgba(0,0,0,0.03);
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:60px 8%;
+}
+footer h2{
+    font-size:26px;
+}
+footer p{
+    opacity:0.8;
+    margin-top:8px;
+}
+
+/* MOBILE RESPONSIVE - Sabse zaroori freelance ke liye */
+@media(max-width:900px){
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:40px 6%;
+    }
+    .hero-text h1{
+        font-size:32px;
+    }
+    .btns{
+        justify-content:center;
+    }
+    .hero-img .img-card{
+        width:300px;
+        height:300px;
+    }
+    .hero-text p{
+        margin:0 auto 25px auto;
+    }
+}
